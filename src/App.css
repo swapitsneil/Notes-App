@@ -1,0 +1,158 @@
+/* App Container */
+.app-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.09);
+  border-radius: 16px;
+  padding: 32px 36px 36px 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  text-align: center;
+  color: #222;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 28px;
+}
+
+/* Notes input area */
+.note-form {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.note-input {
+  flex: 1;
+  border: 1px solid #e2e8f0;
+  border-radius: 7px 0 0 7px;
+  padding: 13px 17px;
+  font-size: 1.08rem;
+  background: #f9fafb;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.note-input:focus {
+  border-color: #3182ce;
+}
+
+.note-button {
+  background: linear-gradient(90deg,#3182ce 0,#2563eb 100%);
+  color: #fff;
+  border: none;
+  border-radius: 0 7px 7px 0;
+  padding: 0 26px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.25s;
+  font-weight: 500;
+}
+
+.note-button:hover {
+  background: linear-gradient(90deg,#2563eb 0,#3182ce 100%);
+}
+
+/* Notes List */
+.note-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.note-item {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  padding: 17px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  font-size: 1.03rem;
+  transition: box-shadow 0.2s;
+}
+
+.note-item:hover {
+  box-shadow: 0 6px 21px rgba(49,130,206,0.12);
+}
+
+.note-text {
+  flex: 1;
+  color: #222;
+}
+
+/* Action Buttons */
+.note-actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.edit-button,
+.delete-button,
+.save-button,
+.cancel-button {
+  border: none;
+  border-radius: 5px;
+  padding: 7px 14px;
+  font-size: .99rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.18s;
+}
+
+.edit-button {
+  background: #ffe28c;
+  color: #45360c;
+}
+
+.edit-button:hover {
+  background: #f7de74;
+}
+
+.delete-button {
+  background: #ffd5d5;
+  color: #751f1f;
+}
+
+.delete-button:hover {
+  background: #ffc2c2;
+}
+
+.save-button {
+  background: #b5f4c3;
+  color: #145a26;
+}
+
+.save-button:hover {
+  background: #8de19e;
+}
+
+.cancel-button {
+  background: #e2e8f0;
+  color: #434343;
+}
+
+.cancel-button:hover {
+  background: #cbd5e1;
+}
+
+/* Edit State */
+.note-item.editing {
+  background: #e9f5ff;
+  border-color: #90cdf4;
+}
+
+.edit-input {
+  flex: 1;
+  padding: 11px 16px;
+  font-size: 1rem;
+  border: 1px solid #3182ce;
+  border-radius: 6px;
+  background: #e9f5ff;
+  margin-right: 12px;
+}
