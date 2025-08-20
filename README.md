@@ -58,7 +58,7 @@ A simple and clean Notes App built with React. This app allows you to add, edit,
 ![Image](https://github.com/user-attachments/assets/7ae72eba-18f0-4e9f-8352-9a65ec57a3b1)
 
 
-##🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Feel free to fork this repo and submit a pull request.
 
